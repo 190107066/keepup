@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+
+<th:block th:fragment="tiles">
+	<!-- top tiles start -->
+	<div class="row tile_count">
+		<div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+			<span class="count_top "><i class="fa fa-user"></i>  Accounts</span>
+			<div class="count green" th:text="${topTiles.totalAccounts}"></div>
+		</div>
+		<div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+			<span class="count_top "><i class="fa fa-user"></i>  Workers</span>
+			<div class="count" th:text="${topTiles.totalWorkers}"></div>
+		</div>
+		<div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+			<span class="count_top "><i class="fa fa-user"></i>  Librarian</span>
+			<div class="count" th:text="${topTiles.totalLibrarians}"></div>
+		</div>
+		<div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+			<span class="count_top"><i class="fa fa-sitemap"></i>  Subscriptions</span>
+			<div class="count green" th:text="${topTiles.totalSubscriptions}"></div>
+		</div>
+		<div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+			<span class="count_top "><i class="fa fa-book"></i>  Magazines</span>
+			<div class="count" th:text="${topTiles.totalMagazines}"></div>
+		</div>
+		<div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+			<span class="count_top"><i class="fa fa-cart-arrow-down"></i> Magazines Borrowed</span>
+			<div class="count green" th:text="${topTiles.totalIssuedMagazines}"></div>
+		</div>
+	</div>
+	<!-- top tiles end -->
+
+</th:block>
+
+</html>
